@@ -1,0 +1,3 @@
+- first we will do SSH 
+- then write command **--> sudo su**
+- the write **--> python**
