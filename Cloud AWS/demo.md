@@ -1,1 +1,0 @@
-![Image description](cmnd1.png)
