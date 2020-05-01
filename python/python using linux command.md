@@ -6,3 +6,7 @@
    ***1 Addition of two numbers***
 
  <img src ="/images/add.png" width="400">
+ 
+ ***2 division of two number***
+ 
+ <img src ="/images/divide.png" width="400">
