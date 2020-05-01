@@ -21,4 +21,8 @@
  
  <img src ="/images/swap.png" width="400">
  
- [**swapping..?**](https://www.geeksforgeeks.org/python-program-to-swap-two-numbers-without-using-third-variable/)
+ [**What is swapping..?**](https://www.geeksforgeeks.org/python-program-to-swap-two-numbers-without-using-third-variable/)
+ 
+ ***5 Convert lower string to upper***
+ 
+ <img src ="/images/upper.png" width="400">
