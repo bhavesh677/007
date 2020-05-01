@@ -1,1 +1,1 @@
-![Image](C:\Users\praz1\Desktop\cloudlinuxcmnds)
+![Image description](cmnd1.png)
