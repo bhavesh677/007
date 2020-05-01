@@ -10,3 +10,7 @@
  ***2 division of two number***
  
  <img src ="/images/divide.png" width="400">
+ 
+ ***3 Square of a number***
+ 
+ <img src ="/images/squar.png" width="400">
