@@ -1,6 +1,8 @@
 - first we will do SSH 
 - then write command **--> sudo su**
 - the write **--> python**
+
+<img src ="/images/sudo.png" width="500">
 - now we will start writing python code
 
    ***1 Addition of two numbers***
