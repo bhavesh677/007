@@ -1,6 +1,6 @@
 - first we will do SSH 
 - then write command **--> sudo su**
-- the write **--> python**
+- then write **--> python**
 
 <img src ="/images/sudo.png" width="500">
 - now we will start writing python code
@@ -16,3 +16,9 @@
  ***3 Square of a number***
  
  <img src ="/images/squar.png" width="400">
+ 
+ ***4 Swapping of two numbers***
+ 
+ <img src ="/images/swap.png" width="400">
+ 
+ [**swapping..?**](https://www.geeksforgeeks.org/python-program-to-swap-two-numbers-without-using-third-variable/)
