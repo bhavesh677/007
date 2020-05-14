@@ -1,22 +1,23 @@
-entry=input("Enter string: ")
+def findint(entry):
+    istr=[int(i) for i in entry.split() if i.isdigit()]
+    
+    return istr
 
-def Findint(entry):
-    lst=[]
-    
-    for i in entry:
-        if i.isdigit():
-            lst.append(i)
-            
-        else:
-            continue
-    
-    return lst
+#str="English = 78 Science = 83 Math = 68 History = 65"
 
-a=Findint(entry)
-b=[]
-for i in range(len(a)):
-    b[i]=int(a[i])
-    
-print(b)
+str=input("Enter string")
+
+num=findint(str)
+
+sm=sum(num)
+
+cnt=len(num)
+
+print("SUM: ",sm)
+
+
+print("Average: ",sm/cnt)
+
+
     
 

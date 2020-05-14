@@ -8,7 +8,7 @@ n = int(input("Enter number of elements for list2: "))
 for i in range(0, n): 
     element = int(input()) 
     l2.append(element)    
-new = list()
+new = []
 
 Odd = l1[1::2]
 print("Element at odd index positions from list1: ",Odd)
