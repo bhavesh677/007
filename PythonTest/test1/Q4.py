@@ -1,4 +1,6 @@
 def findint(entry):
+    
+    
     istr=[int(i) for i in entry.split() if i.isdigit()]
     
     return istr
