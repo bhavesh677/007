@@ -1,5 +1,5 @@
 def kid(n):
-    if n > 7 and n < 13:
+    if 7 < n < 13:
         return "Welcome!!"
     else:
         return "Sorry not allowed ..Bye!"
