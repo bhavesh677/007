@@ -1,13 +1,7 @@
-import numpy as np
+for i in range(2000,3201):
+    if (i % 7 == 0 and i % 5 != 0):
+        print(i,end=",")
+             
 
-data = np.arange(2000,3201)
-
-def find(data):
-    
-      
-    return [i for i in data if i%7 == 0 and i%5 != 0]
-    
-
-print((find(data)))
             
 
