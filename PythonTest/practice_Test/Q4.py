@@ -1,11 +1,10 @@
 def EO(n):
-    if n >= 0:
-        if n % 2 == 0:
-            return "Entered number is Even"
-        else:
-            return "Entered number is Odd"
+    
+    if n % 2 == 0:
+        return "Entered number is Even"
     else:
-        return "invalid input"
+        return "Entered number is Odd"
+    
         
 n = int(input("Enter number: "))
 
