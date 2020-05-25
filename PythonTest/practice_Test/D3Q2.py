@@ -10,14 +10,17 @@ def Sep(mixlst):
         
         Slst = [i for i in mixlst if isinstance(i, str)]
         
-    return Ilst,Flst,Slst
+        Blst = [i for i in mixlst if isinstance(i, bool)]
+        
+    return Ilst,Flst,Slst,Blst
 
-mixlist = [0,"bhavesh",0,"sawant",9.4,7,"vita",7.4,"dbda"]
+mixlist = [0,"bhavesh",0,"sawant",9.4,False,7,"vita",7.4,"dbda",True]
 
-Int,Float,String = Sep(mixlist)
+Int,Float,String,Bool = Sep(mixlist)
 
 print(Int)
 print(Float)
 print(String)
+print(Bool)
 
         

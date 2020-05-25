@@ -12,7 +12,7 @@ def Narci(n,power):
         r = n % 10
         sum += r**power
         n //= 10
-    print(sum)
+    
     if sum == temp:
         return "Narcissistic Number"
     else:
