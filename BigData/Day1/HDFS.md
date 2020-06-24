@@ -67,18 +67,19 @@
 # 5) Copy a File in HDFS
 ## a. Now copy the data.txt file in test to another folder in HDFS using the -cp command:
 ## --> hdfs dfs -cp test/data.txt test/test1/data2.txt
+<img src ="/images/9.png" width="500">
 ## c. Now delete the data2.txt file using the -rm command:
 ## --> hdfs dfs -rm test/test1/data2.txt
 # 6) View the Contents of a File in HDFS
 ## a. You can use the -cat command to view text files in HDFS. Enter the following command to view the contents of data.txt:
 ## --> hdfs dfs -cat test/data.txt
 
-<img src ="/images/9.png" width="500">
+<img src ="/images/10.png" width="500">
 
 ## b. You can also use the ‐tail command to view the end of a file:
 ## --> hdfs dfs -tail test/data.txt
 
-<img src ="/images/10.png" width="500">
+<img src ="/images/11.png" width="500">
 
 ## Notice the output this time is only the last 20 rows of data.txt.
 # 7) Getting a File from HDFS.
@@ -87,18 +88,18 @@
 ## --> cd /tmp
 ## --> ls data*
 
-<img src ="/images/11.png" width="500">
+<img src ="/images/12.png" width="500">
 
 # 8) The getmerge Command
 ## a. Put the file labs/demos/small_blocks.txt into the test folder in
 ## HDFS. You should now have two files in test: data.txt and small_blocks.txt.
 
-<img src ="/images/12.png" width="500">
+<img src ="/images/13.png" width="500">
 
 ## b. Run the following getmerge command:
 ## --> hdfs dfs -getmerge test /tmp/merged.txt
 
-<img src ="/images/13.png" width="500">
+<img src ="/images/14.png" width="500">
 
 ## c. What did the previous command do? Did you open the file merged.txt to see what happened?
 ## Answer: The two files that were in the test folder in HDFS were merged into a
