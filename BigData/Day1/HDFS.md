@@ -67,7 +67,9 @@
 # 5) Copy a File in HDFS
 ## a. Now copy the data.txt file in test to another folder in HDFS using the -cp command:
 ## --> hdfs dfs -cp test/data.txt test/test1/data2.txt
+
 <img src ="/images/9.png" width="500">
+
 ## c. Now delete the data2.txt file using the -rm command:
 ## --> hdfs dfs -rm test/test1/data2.txt
 # 6) View the Contents of a File in HDFS
