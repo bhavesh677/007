@@ -1,76 +1,40 @@
-'''1.Write python program to perform bank operations using class and objects.
-       Conditions:
-a.	Bank name should be static.
-b.	Using menu driven program.
-1 .Deposit
-2. Withdraw
-3. Exit
-'''
-class Bank:
+class Student:
+    def __init__(self,name,age,grade):
+        self.name = name
+        self.age = age
+        self.grade = grade
+        
+    def get_grade(self):
+        return self.grade
     
-    def __init__(self,balance):
-        print("Wellcome to National Bank")
-        self.balance = balance
+class Cource:
+    def __init__(self,name_of_cource,max_students):
+        self.name_of_cource = name_of_cource
+        self.max_students = max_students
+        self.students = []
         
-    def Deposite(self):
-        print("Your Balance is-->",self.balance)
-        
-        self.deposite = int(input("Pleas Enter Amount To Be Deposite: "))
-        
-        self.balance += self.deposite
-        
-        if self.deposite > 0:   
-            print("You have succesfully Deposited-->",self.deposite)
-            print("Your balance is-->",self.balance)
+    def add_student(self,student):
+        if len(self.students) < self.max_students:
+            self.students.append(student)
+            return True
+        return False
+    
+    def get_average_grade(self):
+        value = 0
+        for i in self.students:
+            value += i.get_grade()
             
-        else:
-            print("Invalid Input Please Try Again!!!")
-        
-    def Withdraw(self):
-        print("Your balance is-->",self.balance)
-        
-        self.withdraw = int(input("Please Enter Withdraw Amount: "))
-        
-        self.balance -= self.withdraw
-        
-        if self.withdraw > 0:
-            print("Succesfully Withdrawn-->",self.withdraw)
-            print("Balance is-->",self.balance)
-            
-        else:
-            print("Invalid Input Please Try Again!!!")
-            
-    def Exit(self):
-        self.exit = input("Press Q to Exit: ")
-        if self.exit == "Q" or self.exit == "q":
-            print("Exit Succesfull!!!")
-        
+        return value / len(self.students)
+    
+s1 = Student("bhavesh",25,60)
+s2 = Student("abhishek",25,70)
+s3 = Student("sanyukta",24,80)
 
-customer_info = {1 : 5000, 2 : 7000 , 3 : 2000}
+cource = Cource("DBDA",3)
+cource.add_student(s1)
+cource.add_student(s2)
+cource.add_student(s3)
+print(cource.students[0].name)
+print("Average grade of all students-->",cource.get_average_grade())
 
-Acc_number = int(input("Enter Acc Number: "))
-        
-a = int(input("Press 1 to Deposite \nPress 2 to Withdraw\nPress 3 to Exit\n---> "))
-
-objB = Bank(customer_info[Acc_number])
-
-if a == 1:
-    objB.Deposite()
-
-elif a == 2:
-    objB.Withdraw()
-
-elif a == 3:
-    objB.Exit()
-        
-            
-            
-            
-            
-        
-        
-        
-
-        
-        
 
