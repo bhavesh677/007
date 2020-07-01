@@ -46,12 +46,14 @@ named salaries2. In addition, set the ‐m argument to 1 so that the result is a
 file.
 Solution: The command you enter in the command line will look like this in the terminal window:
 ## -> ## -> sqoop import --connect jdbc:mysql://hadoop.cwibdwqcgjze.us-east-1.rds.amazonaws.com/test --username bhavesh --password corydoras101# --table salaries --columns salary,age -m 1 --target-dir salaries2
-(image 3.4)
+<img src ="/images/3.4.png" width="1000">
+
 - b. After the import, verify you only have one part‐m file in salaries2:
 - -> hdfs dfs -ls salaries2
 - c. Verify that the contents of part‐m‐00000 are only the two columns you specified:
 - -> hdfs dfs -ls salaries2/part-m-00000
-(image 3.5)
+<img src ="/images/3.5.png" width="1000">
+
 # 6 ) Importing from a Query
 - Write a Sqoop import command that imports the rows from salaries in MySQL whose salary column is greater than 90,000.00.
 - a. Use gender as the --split-by value, specify only two mappers, and import the data into the salaries3 folder in HDFS.
@@ -64,14 +66,19 @@ be 1.
 demonstrated earlier in this unit.
 ## -> sqoop import "-Dorg.apache.sqoop.splitter.allow_text_splitter=true" --connect jdbc:mysql://hadoop.cwibdwqcgjze.us-east-1.rds.amazonaws.com/test --username bhavesh --password corydoras101# --query "select * from salaries where salary>90000.00 AND \$CONDITIONS" --split-by salaries.gender -m 2 --target-dir salaries3
 - after running this command you will get following error
-(image 3.6)
-(image 3.6.1)
-(image 3.6.2)
-(image 3.6.3)
+<img src ="/images/3.6.png" width="1000">
+
+<img src ="/images/3.6.1.png" width="1000">
+
+<img src ="/images/3.6.2.png" width="1000">
+
+<img src ="/images/3.6.3.png" width="1000">
 - to remove this error change the collation settings of gender column becouse we are splitting on the basis of gender
-(image collation)
+<img src ="/images/collation.png" width="1000">
+
 - now if you run the same command you will not get any error
-(image 3.7)
+<img src ="/images/3.7.png" width="1000">
+
 - b. To verify the result, view the contents of the files in salaries3. You should have only two output files.
 - -> hdfs dfs -ls salaries3
 - c. View the contents of part‐m‐00000 and part‐m‐00001.
@@ -79,7 +86,8 @@ demonstrated earlier in this unit.
 - -> hdfs dfs -cat salaries3/part-m-00000
 - this part-m-00001 will show only men with salary > 90000
 - -> hdfs dfs -cat salaries3/part-m-00001
-(image3.8)
+<img src ="/images/3.8.png" width="1000">
+
 - Notice that one file contains females, and the other file contains males. Why?
 - Answer: You used gender as the split‐by column, so all records with the same gender are sent to the same mapper.
 - d. Verify that the output files contain only records whose salary is greater than 90,000.00.
