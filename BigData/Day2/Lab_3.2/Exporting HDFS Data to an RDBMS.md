@@ -10,7 +10,8 @@
 - open MobaXterm do SSH
 - -> wget wget  https://dbda-labs.s3.amazonaws.com/labs.zip
 - -> unzip labs.zip
-(image 2.1)
+<img src ="/images/2.1.png" width="1000">
+
 # 1 ) Put the Data into HDFS
 - go to labs/Lab3.2
 - View the contents of salarydata.txt:
@@ -20,12 +21,14 @@
 ### -> hdfs dfs -mkdir salarydata
 - d. Put salarydata.txt into the salarydata directory in HDFS.
 ### -> hdfs dfs –put salarydata.txt salarydata
-(image 2.2)
+<img src ="/images/2.2.png" width="1000">
+
 # 3 ) Export the Data
 - a. Run a Sqoop command that exports the salarydata folder in HDFS into the salaries2 table in MySQL. At the end of the MapReduce output, you should see a
 log event stating that 10,000 records were exported.
 ## -> sqoop export --connect jdbc:mysql://hadoop.cwibdwqcgjze.us-east-1.rds.amazonaws.com/test --username bhavesh --password corydoras101# --table salaries2 --export-dir salarydata --input-fields-terminated-by ","
-(image 2.3)
+<img src ="/images/2.3.png" width="1000">
+
 - b. Verify it worked by viewing the table’s contents from the mysql workbench.
 - select * from salaries2;
 ## Result
