@@ -37,7 +37,8 @@
 - -> hdfs dfs -cat salaries/part-m-00000
 - Notice the contents of these files are the rows from the salaries table in MySQL. You have now successfully imported data from a MySQL database into HDFS.
 Notice that you imported the entire table with all of its columns. Next, you will import only specific columns of a table.
-(image 3.3)
+<img src ="/images/3.3.png" width="1000">
+
 # 5 ) Specify Columns to Import
 - a. Using the ‐‐columns argument, write a Sqoop command that imports the salary
 and age columns (in that order) of the salaries table into a directory in HDFS
