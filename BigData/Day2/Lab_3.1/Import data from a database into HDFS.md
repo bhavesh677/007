@@ -22,7 +22,9 @@
 ## a. Enter the following Sqoop command (all on a single line), which imports the salaries table in the test database into HDFS:
 ## - sqoop import --connect jdbc:mysql://(end point)/(database name) --username (user name) --password (password) --table (table name)
 ## -> sqoop import --connect jdbc:mysql://hadoop.cwibdwqcgjze.us-east-1.rds.amazonaws.com/test --username bhavesh --password corydoras101# --table salaries
+
 <img src ="/images/3.2.png" width="1000">
+
 - b. A MapReduce job should start executing, and it may take a couple of minutes for the job to complete.
 # 4 ) Verify the Import
 - a. View the contents of your HDFS folder:
