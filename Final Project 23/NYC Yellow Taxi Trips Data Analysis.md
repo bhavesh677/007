@@ -31,5 +31,5 @@
 ## Objective:
 - The core objective of this project is to analyse the factors for demand for taxis, to find the most pickups, drop-offs of public based on their location, time of most traffic and how to overcome the needs of the public.
 
-## Architecture Diagram:
-<img src ="/Images/arch_dig.png" width="500">
+## Architecture Diagram:<br>
+![](Images/arch_dig.png)
