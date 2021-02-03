@@ -46,3 +46,17 @@ Variable Name | Description |
 [CloudFormation templet](https://github.com/bhavesh677/007/blob/Bhavesh-007/Final%20Project%2023/Code/CFT.json)
 
 ## - Then we connected Hive table with Tableau Public using Amazon EMR Hadoop Hive Connector
+
+## Chalanges Faced:
+**Slow query performance**
+- Because of big volume(30GB) of our data,the performance of our query become very poor, we tackled this problem with the help of diffrent bigdata file formats(orc,parquet,etc.)
+- After converting to parquet format our data volume reduced to 8GB, and performance improved.
+
+**Emr steps**
+- Initially we were strugling alot with EMR steps, but after reading AWS documentation and doing some trial and erros this problem got solved.
+
+**CloudFormation**
+- Our EMR cluster use to through some errors while we were doing cloudeFormation, but after backtracking the error message, we were able to launch EMR cluster successfully using CFT.
+
+**Loading data in Tableau**
+- This was biggest chalange in front of us to connect and load the data with tableau,even after converting our data to bigdata file formats(orc,parquet), volume of our data was still very large for the tableau to execute the query and do visualizations, we solved this problem by saving extract of our data in local machine, and then everything went very smooth.
