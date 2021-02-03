@@ -35,3 +35,5 @@ Variable Name | Description |
 
 ## Architecture Diagram:<br>
 ![](Images/arch_dig.png)
+
+## Code to Get Raw Data from NYC website and store data in S3 bucket:
