@@ -7,7 +7,7 @@
 - ### Yellow Taxis are easily identified by their yellow color, taxi “T” markings, and license numbers on the roof and sides of the vehicle.
 
 ## Introduction of NYC Yellow Taxi Trip Data:
-Variable Name | Variable Meaning |
+Variable Name | Description |
 --------------|------------------|
 **vendorid :**|A code indicating the [TPEP provider](https://www1.nyc.gov/site/tlc/about/tlc-trip-record-data.page) that provided the record.<br>
 **pickup_datetime:**| The date and time when the meter was engaged.<br>
