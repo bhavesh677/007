@@ -43,4 +43,4 @@ Variable Name | Description |
 [PyScript](https://github.com/bhavesh677/007/blob/Bhavesh-007/Final%20Project%2023/Code/finalScript.py)
 
 ## We have used AWS CloudFormation to automate above process
-[CloudFormation templet]()
+[CloudFormation templet](https://github.com/bhavesh677/007/blob/Bhavesh-007/Final%20Project%2023/Code/CFT.json)
