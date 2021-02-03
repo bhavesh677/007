@@ -10,9 +10,9 @@
 Variable Name | Variable Meaning |
 --------------|------------------|
 **vendorid :**|A code indicating the [TPEP provider](https://www1.nyc.gov/site/tlc/about/tlc-trip-record-data.page) that provided the record.<br>
-**pickup_datetime :**| The date and time when the meter was engaged.<br>
-**dropoff_datetime :**          |  The date and time when the meter was disengaged.<br>
-**passanger_count :**        | The number of passengers in the vehicle. This is a driver-entered value.<br>
+**pickup_datetime:**| The date and time when the meter was engaged.<br>
+**dropoff_datetime:**          |  The date and time when the meter was disengaged.<br>
+**passanger_count:**        | The number of passengers in the vehicle. This is a driver-entered value.<br>
 **trip_distance :**          | The elapsed trip distance in miles reported by the taximeter.<br>
 **PULocationID :**| Taxi Zone in which the taximeter was engaged.<br>
 **DOLocationID :** |Taxi Zone in which the taximeter was disengaged.<br>
