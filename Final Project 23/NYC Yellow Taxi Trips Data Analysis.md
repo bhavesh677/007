@@ -40,4 +40,7 @@ Variable Name | Description |
 [Dataingestion](https://github.com/bhavesh677/007/blob/Bhavesh-007/Final%20Project%2023/Code/dataingestion.sh)
 
 ## Code to Read Raw Data from S3 bucket and create Dataframe in PySpark, Perform Cleaning and Transformations, and Create Table in Hive:
+[PyScript](https://github.com/bhavesh677/007/blob/Bhavesh-007/Final%20Project%2023/Code/finalScript.py)
 
+## We have used AWS CloudFormation to automate above process
+[CloudFormation templet]()
